@@ -13,4 +13,4 @@ Vacancy Project — это приложение для взаимодейств�
 1. **Клонируйте репозиторий:**
 
    ```bash
-   git clone https://github.com/ваш-репозиторий/vacancy_project2.git
+   git clone https://github.com/miha235/vacancy_project2.git
