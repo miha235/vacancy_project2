@@ -11,7 +11,6 @@ class HeadHunterAPI:
     def get_vacancies(self, search_query: str) -> List[Dict[str, Any]]:
         """
         Получает список вакансий с HeadHunter API по заданному запросу и области.
-
         :param search_query: Поисковый запрос для вакансий.
         :return: Список словарей с информацией о вакансиях.
         """
