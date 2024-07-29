@@ -1,122 +1,122 @@
 [
     {
-        "title": "Пресс-секретарь",
-        "url": "https://hh.ru/vacancy/104204298",
-        "salary": "Не указана",
-        "description": "Высшее профильное образование - \"Специалист по связям с общественностью\", \"<highlighttext>Журналист</highlighttext>\". Знание основных офисных программ Microsoft Office. Пользователь 1C (желательно). "
+        "title": "Стажер-разработчик",
+        "url": "https://hh.ru/vacancy/103058314",
+        "salary": "от 46000 RUR",
+        "description": "Знание SQL. Владение языками программирования. Знание Java, C#, <highlighttext>Python</highlighttext>, C++. Опыт работы с PostgreSQL / Postgres Pro, Oracle, My SQL, MS..."
     },
     {
-        "title": "Пресс-секретарь (PR-менеджер)",
-        "url": "https://hh.ru/vacancy/104214899",
+        "title": "Data Scientist",
+        "url": "https://hh.ru/vacancy/102783136",
         "salary": "Не указана",
-        "description": "Высшее образование, предпочтительно в сфере журналистики или связи с общественностью. Опыт работы пресс-секретарем, менеджером по работе со СМИ, pr..."
+        "description": "Хорошие знания и опыт практического применения теории вероятностей и математической статистики, методов машинного обучения и искусственного интеллекта. Знание <highlighttext>Python</highlighttext>, ML..."
     },
     {
-        "title": "Корреспондент",
-        "url": "https://hh.ru/vacancy/102174384",
+        "title": "Младший аналитик / ВТБ РОСТ",
+        "url": "https://hh.ru/vacancy/103037043",
+        "salary": "100000 - 100000 RUR",
+        "description": "Имеешь опыт работы от шести месяцев в анализе данных, рисках или технологическом консалтинге. Умеешь работать в MS Excel с большими..."
+    },
+    {
+        "title": "DevOps Engineer",
+        "url": "https://hh.ru/vacancy/94115873",
+        "salary": "Не указана",
+        "description": "Опыт работы с Ansible. Владение скриптовыми языками, в т. ч. Bash, <highlighttext>Python</highlighttext>, Perl и пр. Базовые знания сетевых технологий. "
+    },
+    {
+        "title": "Middle QA Auto Engineer",
+        "url": "https://hh.ru/vacancy/101403851",
+        "salary": "Не указана",
+        "description": "Опыт написания UI-тестов и владение одним из перечисленных языков программирования: <highlighttext>Python</highlighttext>, C#, Java, Kotlin, JavaScript. Знание английского языка на..."
+    },
+    {
+        "title": "Junior IOS developer",
+        "url": "https://hh.ru/vacancy/103139340",
+        "salary": "Не указана",
+        "description": "Техническое образование в области разработки программного обеспечения/смежной специальности. Разговорный английский язык (b1+). Знание основ Flutter и <highlighttext>Python</highlighttext>..."
+    },
+    {
+        "title": "Младший финансист / ВТБ РОСТ",
+        "url": "https://hh.ru/vacancy/103036913",
+        "salary": "100000 - 100000 RUR",
+        "description": "...или смежных областях. — Имеешь базовые знания финансовых инструментов. — Хорошо владеешь инструментами MS Office. — Знание IT-инструментов (SQL, <highlighttext>Python</highlighttext>) будет преимуществом."
+    },
+    {
+        "title": "Python Developer Middle",
+        "url": "https://hh.ru/vacancy/102577028",
+        "salary": "Не указана",
+        "description": "Не менее 3 лет коммерческого опыта разработки на <highlighttext>Python</highlighttext>. Git на уровне ежедневного использования. Знание СУБД PostgreSQL. Уверенное владение фреймворком..."
+    },
+    {
+        "title": "Middle Python Developer",
+        "url": "https://hh.ru/vacancy/103726595",
+        "salary": "80000 - 120000 RUR",
+        "description": "Опыт коммерческой разработки от 2 лет. Уверенное знание и опыт работы с <highlighttext>Python</highlighttext>/Flask. No-SQL (MongoDB/Redis). "
+    },
+    {
+        "title": "Программист Python",
+        "url": "https://hh.ru/vacancy/103721272",
         "salary": "от 140000 RUR",
-        "description": "Законченное высшее образование. – Подтверждённый опыт работы <highlighttext>журналистом</highlighttext> от трёх лет (успешным кандидатам делается скидка на опыт). – Общее понимание производственных и..."
+        "description": "Опыт разработки на <highlighttext>Python</highlighttext> от 3-х лет. Желание работать в команде и делиться опытом и знаниями с коллегами. "
     },
     {
-        "title": "PR-специалист / Event-менеджер / SMM-менеджер",
-        "url": "https://hh.ru/vacancy/104072558",
-        "salary": "от 80000 RUR",
-        "description": "Мыслить. Писать тексты. Иметь развитое чувство прекрасного."
-    },
-    {
-        "title": "Ведущий специалист отдела по связям с общественностью",
-        "url": "https://hh.ru/vacancy/103901017",
-        "salary": "70000 - 80000 RUR",
-        "description": "Гражданство Российской Федерации (в соответствии с частью 1 статьи 21 Федерального закона от 27.07.2004  79-ФЗ «О государственной..."
-    },
-    {
-        "title": "Менеджер по продажам рекламы Фонтанка.ру",
-        "url": "https://hh.ru/vacancy/96619562",
-        "salary": "от 60000 RUR",
-        "description": "У тебя грамотная речь и высокие коммуникативные навыки. Для общения с нашими заказчиками это важно!"
-    },
-    {
-        "title": "Помощник (помощница)/Ассистент",
-        "url": "https://hh.ru/vacancy/103721697",
-        "salary": "40000 - 70000 RUR",
-        "description": "Работа с большим объемом данных. Навыки межличностного общения. Аналитические способности; (нужно анализировать каналы на качество аудитории)."
-    },
-    {
-        "title": "Личный помощник руководителя",
-        "url": "https://hh.ru/vacancy/103637942",
-        "salary": "50000 - 90000 RUR",
-        "description": "C умением самостоятельно, доводить задачи до результата. Все помнить! И все записывать! С навыками планирования своего рабочего времени, умение расставлять..."
-    },
-    {
-        "title": "Репортер",
-        "url": "https://hh.ru/vacancy/103614928",
+        "title": "Back-end-разработчик",
+        "url": "https://hh.ru/vacancy/104391309",
         "salary": "Не указана",
-        "description": "Опыт работы в YouTube обязателен. В сопроводительном письме расскажите, пожалуйста, о себе и прикрепите ссылки на ваши работы в кадре. "
+        "description": "Знание Django, Django-rest, Django-rq, Flask. Unit / smoke testing. Опыт работы с MySQL / Postgres. Опыт работы с Shinx. "
     },
     {
-        "title": "Специалист по рекламе и PR",
-        "url": "https://hh.ru/vacancy/103556071",
-        "salary": "35000 - 60000 RUR",
-        "description": "Высшее образование (можно неоконченное). Опыт работы желателен, но не является принципиальным. Структурность, ответственность и пунктуальность. Знание основ маркетинга, рекламы. "
+        "title": "Программист (Junior - младший разработчик)",
+        "url": "https://hh.ru/vacancy/103797621",
+        "salary": "30000 - 60000 RUR",
+        "description": "Знание одного из объектно-ориентированного языка программирования, к примеру: C++\\C#, Delphi, <highlighttext>Python</highlighttext>, Pascal, 1С. Знание работы с СУБД..."
     },
     {
-        "title": "Педагог дополнительного образования",
-        "url": "https://hh.ru/vacancy/104170035",
-        "salary": "50000 - 90000 RUR",
-        "description": null
-    },
-    {
-        "title": "Журналист-редактор / корреспондент",
-        "url": "https://hh.ru/vacancy/101491402",
-        "salary": "65000 - 90000 RUR",
-        "description": "Ориентация в соцсетях. По желанию командировки."
-    },
-    {
-        "title": "Журналист-копирайтер",
-        "url": "https://hh.ru/vacancy/102793956",
+        "title": "Middle Python разработчик в команду AI",
+        "url": "https://hh.ru/vacancy/103285189",
         "salary": "Не указана",
-        "description": "Опыт работы <highlighttext>журналистом</highlighttext>-копирайтером от 2х лет. Уверенный пользователь ПК (MS Office)."
+        "description": "Опыт коммерческой разработки на <highlighttext>Python</highlighttext> 3 от 2 лет. - Опыт разработки на FastAPI от 1 года. - Опыт работы с PostgreSQL..."
     },
     {
-        "title": "Главный редактор",
-        "url": "https://hh.ru/vacancy/103896567",
-        "salary": "до 150000 RUR",
-        "description": "Знание специфики работы <highlighttext>журналиста</highlighttext> и редактора ОБЯЗАТЕЛЬНО. Опыт работы от 3х лет в должности: <highlighttext>журналист</highlighttext>, корреспондент, обозреватель, репортёр, редактор..."
-    },
-    {
-        "title": "AI-тренер / Тренер искусственного интеллекта",
-        "url": "https://hh.ru/vacancy/103231133",
+        "title": "Инженер по тестированию",
+        "url": "https://hh.ru/vacancy/102914795",
         "salary": "Не указана",
-        "description": "Опыт работы в качестве учителя, преподавателя, копирайтера, переводчика, технического писателя, <highlighttext>журналиста</highlighttext>, редактора, контент-менеджера или в другой сфере, связанной с..."
+        "description": "Релевантный опыт работы от 2-х лет и более. Понимание устройства современных веб-приложений и браузеров. Опыт тестирования веб-интерфейсов..."
     },
     {
-        "title": "SEO-специалист (junior)",
-        "url": "https://hh.ru/vacancy/103339039",
-        "salary": "от 60000 RUR",
-        "description": "Статьи пишут <highlighttext>журналисты</highlighttext>, а не копирайтеры. Иногда (почти всегда) у них свое понимание идеального текста. Ваша задача — сделать так, чтобы..."
+        "title": "Тестировщик",
+        "url": "https://hh.ru/vacancy/104307177",
+        "salary": "до 70000 RUR",
+        "description": "Базовые знания JS для написания скриптов Postman или базовых знаний <highlighttext>Python</highlighttext>. Базовые знания в автоматизации. Работа с биллинговыми и платежными..."
     },
     {
-        "title": "Журналист-копирайтер",
-        "url": "https://hh.ru/vacancy/103930446",
-        "salary": "от 45000 RUR",
-        "description": "Отличное письменное владение русским языком, грамотность и стилистическая гармония. Внимательность к деталям, скрупулёзность. Умение разрабатывать и писать качественные и интересные..."
+        "title": "Junior Python Backend Developer",
+        "url": "https://hh.ru/vacancy/104345588",
+        "salary": "до 80000 RUR",
+        "description": "Уверенное знание <highlighttext>python</highlighttext>. Уверенное знание django и DRF. Опыт работы с git. Опыт работы с PostgreSQL и умение писать SQL..."
     },
     {
-        "title": "Журналист-копирайтер",
-        "url": "https://hh.ru/vacancy/104260430",
-        "salary": "50000 - 80000 RUR",
-        "description": "Опыт в аналогичной должности от 2 лет. Профессиональная работа с текстовым материалом. Грамотная письменная речь. Уверенный пользователь Microsoft Office (Word..."
+        "title": "Junoir Python developer",
+        "url": "https://hh.ru/vacancy/102612686",
+        "salary": "до 60000 RUR",
+        "description": "Знаешь <highlighttext>Python</highlighttext> и имеешь опыт написания pet-проектов. Знаком(а) с Django и Flask/Fast API. Понимаешь СУБД и можешь..."
     },
     {
-        "title": "Ассистент/Помощник руководителя",
-        "url": "https://hh.ru/vacancy/103892603",
-        "salary": "от 50000 RUR",
-        "description": "Я предприниматель, маркетолог, бизнес-психолог и бизнес-коуч. Провожу тренинги для предпринимателей. Опыт в бизнесе 22 года. Ассистент это как..."
+        "title": "Backend-разработчик",
+        "url": "https://hh.ru/vacancy/103234415",
+        "salary": "Не указана",
+        "description": "Знание PostgreSQL на уровне ORM Базовое знание CI/CD. Опыт back-end разработки на <highlighttext>Python</highlighttext> не менее трёх лет. "
     },
     {
-        "title": "Видеограф-монтажер (образовательный контент)",
-        "url": "https://hh.ru/vacancy/104176158",
-        "salary": "15000 - 90000 RUR",
-        "description": "Требования:- Пунктуальность;- Опыт работы в пакете Аdobe (Pr,Ae,Lr,Ps);- Пак своего оборудования не обязателен, наличие собственного аппарата по..."
+        "title": "Инженер-разработчик компьютерного зрения",
+        "url": "https://hh.ru/vacancy/102769311",
+        "salary": "Не указана",
+        "description": "Хорошее знание С/С++: стандарты 11-17, библиотека boost\\qt и т.д.. С <highlighttext>Python</highlighttext> (библиотеки Matplotlib, NumPy и другие). "
+    },
+    {
+        "title": "Middle/Senior Python Разработчик",
+        "url": "https://hh.ru/vacancy/102678955",
+        "salary": "Не указана",
+        "description": "Опыт работы с <highlighttext>Python</highlighttext> от 3-х лет. Знание одного из современных web frameworks Django/FastAPI/Flask. Знание SQL (PostgreSQL..."
     }
 ]
