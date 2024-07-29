@@ -1,0 +1,8 @@
+# Ignore IDE project files
+.idea/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore virtual environment directory
+env/
