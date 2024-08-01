@@ -1,46 +1,32 @@
 import json
 import re
-from typing import List, Dict, Any, Tuple, Optional
+from typing import List, Optional, Dict, Any
+from src.vacancy_saver_api import VacancySaver
 
-class JSONSaver:
+class JSONSaver(VacancySaver):
     """
     Класс для сохранения и получения вакансий в формате JSON.
     """
 
     def __init__(self, filename: str = 'data/vacancies.json'):
-        self.filename = filename
+        self._filename = filename # Приватный атрибут
 
-    def add_vacancies(self, vacancies: List[Dict[str, Any]]) -> None:
+    def add_vacancies(self, vacancies: List[Dict[str, str]]) -> None:
         """
         Добавляет список вакансий в JSON-файл.
-
-        :param vacancies: Список вакансий.
         """
-        self.validate_vacancies(vacancies)
-
-        for vacancy in vacancies:
-            vacancy['description'] = self.remove_highlight_tags(vacancy['description'])
-
-        with open(self.filename, 'w') as file:
+        with open(self._filename, 'w') as file:
             json.dump(vacancies, file, ensure_ascii=False, indent=4)
 
-    @staticmethod
-    def remove_highlight_tags(text: Optional[str]) -> str:
+    def remove_highlight_tags(self, text: str) -> str:
+        """
+        Удаляет теги <highlighttext> из строки.
+        """
         if text is None:
             return ""
         return text.replace('<highlighttext>', '').replace('</highlighttext>', '')
 
-    @staticmethod
-    def validate_vacancies(vacancies: List[Dict[str, Any]]) -> None:
-        if not isinstance(vacancies, list):
-            raise ValueError("Vacancies must be a list.")
-        for vacancy in vacancies:
-            if not isinstance(vacancy, dict):
-                raise ValueError("Each vacancy must be a dictionary.")
-
-    def parse_salary(self, salary_str: str) -> Tuple[Optional[int], Optional[int]]:
-        if not isinstance(salary_str, str):
-            raise ValueError("Salary must be a string.")
+    def parse_salary(self, salary_str: str) -> Optional[tuple[int, int]]:
         match = re.search(r"(\d+)\s*-\s*(\d+)", salary_str)
         if match:
             return int(match.group(1)), int(match.group(2))
@@ -55,7 +41,7 @@ class JSONSaver:
 
         return None, None
 
-    def check_salary(self, salary: Any, min_salary: int, max_salary: int) -> bool:
+    def check_salary(self, salary: str, min_salary: int, max_salary: int) -> bool:
         if isinstance(salary, str):
             from_salary, to_salary = self.parse_salary(salary)
             if from_salary and to_salary:
@@ -70,17 +56,12 @@ class JSONSaver:
             return (from_salary and min_salary <= from_salary <= max_salary) or (to_salary and min_salary <= to_salary <= max_salary)
         return False
 
-    def get_vacancies(self, filter_words: Optional[List[str]] = None, top_n: Optional[int] = None, salary_range: Optional[str] = None) -> List[Dict[str, Any]]:
+    def get_vacancies(self, filter_words: Optional[List[str]] = None, top_n: Optional[int] = None, salary_range: Optional[str] = None) -> List[Dict[str, str]]:
         """
         Получает список вакансий из JSON-файла, фильтрует их и возвращает результат.
-
-        :param filter_words: Список ключевых слов для фильтрации вакансий.
-        :param top_n: Количество вакансий для вывода в топ N.
-        :param salary_range: Диапазон зарплат для фильтрации вакансий.
-        :return: Отфильтрованный список вакансий.
         """
         try:
-            with open(self.filename, 'r') as file:
+            with open(self._filename, 'r') as file:
                 vacancies = json.load(file)
         except FileNotFoundError:
             vacancies = []
@@ -93,7 +74,7 @@ class JSONSaver:
             vacancies = [v for v in vacancies if self.check_salary(v.get('salary'), min_salary, max_salary)]
 
         if top_n:
-            def get_salary(v: Dict[str, Any]) -> int:
+            def get_salary(v):
                 salary = v.get('salary')
                 if isinstance(salary, str):
                     from_salary, to_salary = self.parse_salary(salary)
@@ -105,3 +86,41 @@ class JSONSaver:
             vacancies = sorted(vacancies, key=get_salary, reverse=True)[:top_n]
 
         return vacancies
+
+    def remove_vacancies(self, criteria: Optional[Dict[str, Any]] = None) -> None:
+        """
+        Удаляет вакансии из JSON-файла на основе заданных критериев.
+        Если критерии не заданы, удаляет все вакансии.
+        """
+        try:
+            with open(self._filename, 'r') as file:
+                vacancies = json.load(file)
+        except FileNotFoundError:
+            return
+
+        if criteria:
+            filtered_vacancies = []
+            for vacancy in vacancies:
+                match = True
+                for key, value in criteria.items():
+                    if vacancy.get(key) != value:
+                        match = False
+                        break
+                if not match:
+                    filtered_vacancies.append(vacancy)
+            with open(self._filename, 'w') as file:
+                json.dump(filtered_vacancies, file, ensure_ascii=False, indent=4)
+        else:
+            open(self._filename, 'w').close()
+
+    def get_filename(self) -> str:
+        """
+        Возвращает имя файла.
+        """
+        return self._filename
+
+    def set_filename(self, filename: str) -> None:
+        """
+        Устанавливает новое имя файла.
+        """
+        self._filename = filename

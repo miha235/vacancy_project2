@@ -2,11 +2,12 @@ from src.hh import HeadHunterAPI
 from src.vacancy import Vacancy
 from src.json_saver import JSONSaver
 
-def user_interaction() -> None:
+def user_interaction():
     """
     Взаимодействие с пользователем для поиска вакансий, их
     фильтрации и вывода результатов.
     """
+
     hh_api = HeadHunterAPI()
     json_saver = JSONSaver()
 
@@ -44,11 +45,23 @@ def user_interaction() -> None:
         for vacancy in filtered_vacancies:
             print(f"Заголовок: {vacancy['title']}")
             description = vacancy.get('description', '')
+            if description:
+                description = description.replace('<highlighttext>', '').replace('</highlighttext>', '')
             print(f"Описание: {description}")
             if vacancy.get('salary'):
                 print(f"Зарплата: {vacancy['salary']}")
             print(f"URL: {vacancy['url']}")
             print()
+
+    if input("Хотите удалить вакансии из файла? (да/нет): ").lower() == 'да':
+        criteria = {}
+        if input("Хотите задать критерии для удаления? (да/нет): ").lower() == 'да':
+            key = input("Введите поле для критерия (например, 'title'): ")
+            value = input(f"Введите значение для поля '{key}': ")
+            criteria[key] = value
+
+        json_saver.remove_vacancies(criteria)
+        print("Вакансии удалены из файла.")
 
 
 if __name__ == "__main__":
